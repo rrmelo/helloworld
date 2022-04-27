@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html>
-<title>Tesouraria do Grupo 1</title>
-
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
-
+<head>
+<title>Tesouraria do Grupo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-
-
 
 <style>
 table {
@@ -29,8 +20,12 @@ th, td {
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
-</style>
 
+
+.valor {
+  text-align: right;
+}
+</style>
 </head>
 
 <body>
@@ -46,39 +41,55 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 <br><br>
  
  <table>
-<tr><td>(+) Entradas (Sacola)</td><td>2.338,30</td><td></tr>
-<tr><td>(+) Entradas (Inter)</td><td>300,00</td><td></tr>
-<tr><td>(+) Entradas (Itau)</td><td>210,00</td><td></tr>
-<tr><td>(=) Total de Entradas</td><td>2.848,30</td><td></tr>
-<tr><td>(-) Total de SaÌdas</td><td>-4.297,14</td><td></tr>
-<tr><td>(=) Saldo do PerÌodo</td><td>-1.448,84</td><td></tr>
-<tr><td>(+) Reserva Prudente Saldo Anterior</td><td>11.296,53</td><td></tr>
-<tr><td>(+) Venda de Literatura</td><td>114,90</td><td></tr>
-<tr><td>(-) Compra de Literatura</td><td>-484,00</td><td></tr>
-<tr><td>(=) Reserva Prudente Saldo Final</td><td>9.478,59</td><td></tr>
+
+    <tr>
+      <th>Demonstrativo</th>
+      <th >Valor (R$)</th>
+    </tr>
+
+<tr><td>(+) Entradas (Sacola)</td><td class='valor'>2.338,30</td></tr>
+<tr><td>(+) Entradas (Pix Inter)</td><td class='valor'>300,00</td></tr>
+<tr><td>(+) Entradas (Pix Itau)</td><td class='valor'>210,00</td></tr>
+<tr><td>(=) Total de Entradas</td><td class='valor'>2.848,30</td></tr>
+<tr><td>(-) Total de Sa√≠das</td><td class='valor'>-4.297,14</td></tr>
+<tr><td>(=) Saldo do Per√≠odo</td><td class='valor'>-1.448,84</td></tr>
+<tr><td>(+) Saldo Reserva Prudente Anterior</td><td class='valor'>11.296,53</td></tr>
+<tr><td>(+) Venda de Literatura</td><td class='valor'>114,90</td></tr>
+<tr><td>(-) Compra de Literatura</td><td class='valor'>-484,00</td></tr>
+<tr><td>(=) Saldo Reserva Prudente Final</td><td class='valor'>9.478,59</td></tr>
+
   </table>
 
 
 <br><br>
 
   <table>
-<tr><td>Aluguel</td><td>2.300,00</td><td></tr>
-<tr><td>CondomÌnio</td><td>395,57</td><td></tr>
-<tr><td>IPTU</td><td>464,60</td><td></tr>
-<tr><td>Light</td><td>0,00</td><td></tr>
-<tr><td>Mercado</td><td>133,11</td><td></tr>
-<tr><td>Faxina</td><td>150,00</td><td></tr>
-<tr><td>Repasse AA ¡rea 01 ESL</td><td>250,00</td><td></tr>
-<tr><td>Repasse AA Distrito 29</td><td>50,00</td><td></tr>
-<tr><td>Total Despesas Fixas</td><td>3.743,28</td><td></tr>
-<tr><td>Taxa do Bombeiro 2022</td><td>0,00</td><td></tr>
-<tr><td>ManutenÁ„o (Troca da Pia)</td><td>0,00</td><td></tr>
-<tr><td>Literatura (Folhetos de CTO)</td><td>0,00</td><td></tr>
-<tr><td>ManutenÁ„o (Termostato Bebedouro)</td><td>0,00</td><td></tr>
-<tr><td>Despesas Evento Revista VivÍncia</td><td>299,15</td><td></tr>
-<tr><td>Despesas Contrato Sala 208</td><td>254,71</td><td></tr>
-<tr><td>Total Despesas VariavÈis</td><td>553,86</td><td></tr>
-<tr><td>Total</td><td>4.297,14</td><td></tr>
+    <tr>
+      <th>Relat√≥rio das Sa√≠das</th>
+      <th >Valor R$</th>
+    </tr>
+
+
+<tr><td>Aluguel</td><td  class='valor'>2.300,00</td></tr>
+<tr><td>Condom√≠nio</td><td  class='valor'>395,57</td></tr>
+<tr><td>IPTU</td><td  class='valor'>464,60</td></tr>
+<tr><td>Light</td><td  class='valor'>0,00</td></tr>
+<tr><td>Mercado</td><td  class='valor'>133,11</td></tr>
+<tr><td>Faxina</td><td  class='valor'>150,00</td></tr>
+<tr><td>Repasse ESLAARJ Area 01</td><td  class='valor'>250,00</td></tr>
+<tr><td>Repasse AA Distrito 29</td><td  class='valor'>50,00</td></tr>
+<tr><td>Subtotal Despesas Fixas</td><td  class='valor'>3.743,28</td></tr>
+<tr><td> </td><td  class='valor'> </td></tr>
+<tr><td>Taxa do Bombeiro 2022</td><td  class='valor'>0,00</td></tr>
+<tr><td>Manuten√ß√£o (Troca da Pia)</td><td  class='valor'>0,00</td></tr>
+<tr><td>Literatura (Folhetos de CTO)</td><td  class='valor'>0,00</td></tr>
+<tr><td>Manuten√ß√£o (Termostato Bebedouro)</td><td  class='valor'>0,00</td></tr>
+<tr><td>Despesas Evento Revista Viv√™ncia</td><td  class='valor'>299,15</td></tr>
+<tr><td>Despesas Contrato Sala 208</td><td  class='valor'>254,71</td></tr>
+<tr><td>Subtotal Despesas Variaveis</td><td  class='valor'>553,86</td></tr>
+<tr><td> </td><td  class='valor'> </td></tr>
+<tr><td>Total de Despesas</td><td  class='valor'>4.297,14</td></tr>
+
   </table>
 
 
@@ -97,68 +108,67 @@ tr:nth-child(even) {background-color: #f2f2f2;}
   <table>
     <tr>
       <th>Data</th>
-      <th>Descri&ccedil;&atilde;o</th>
+      <th>Descri√ß√£o</th>
       <th>Entrada(+)</th>
-      <th>Sa&iacute;da(-)</th>
+      <th>Sa√≠da(-)</th>
       <th>Saldo(=)</th>
     </tr>
 
-
-<tr><td>1/abr 6a-f</td><td>Saldo Inicial  </td><td></td><td></td><td>11.296,53</td><td></tr>
-<tr><td>1/abr 6a-f</td><td>Sacola  25442</td><td>40,00</td><td></td><td>11.336,53</td><td></tr>
-<tr><td>1/abr 6a-f</td><td>Mercado 10x500g CafÈ </td><td></td><td>-133,11</td><td>11.203,42</td><td></tr>
-<tr><td>2/abr Sab</td><td>Sacola  25443</td><td>269,10</td><td></td><td>11.472,52</td><td></tr>
-<tr><td>2/abr Sab</td><td>Sacola  25444</td><td>61,00</td><td></td><td>11.533,52</td><td></tr>
-<tr><td>4/abr 2a-f</td><td>Evento RV Bolo 25443</td><td></td><td>-46,00</td><td>11.487,52</td><td></tr>
-<tr><td>4/abr 2a-f</td><td>Evento RV Mercado 25443</td><td></td><td>-193,15</td><td>11.294,37</td><td></tr>
-<tr><td>4/abr 2a-f</td><td>Evento RV Cadeiras Aluguel 25443</td><td></td><td>-60,00</td><td>11.234,37</td><td></tr>
-<tr><td>4/abr 2a-f</td><td>Sacola  25445</td><td>92,00</td><td></td><td>11.326,37</td><td></tr>
-<tr><td>5/abr 3a-f</td><td>Sacola  25446</td><td>129,75</td><td></td><td>11.456,12</td><td></tr>
-<tr><td>5/abr 3a-f</td><td>Sacola Pix Itau  </td><td>10,00</td><td></td><td>11.466,12</td><td></tr>
-<tr><td>5/abr 3a-f</td><td>Condominio  </td><td></td><td>-395,57</td><td>11.070,55</td><td></tr>
-<tr><td>5/abr 3a-f</td><td>IPTU  </td><td></td><td>-464,60</td><td>10.605,95</td><td></tr>
-<tr><td>6/abr 4a-f</td><td>Sacola  25447</td><td>40,00</td><td></td><td>10.645,95</td><td></tr>
-<tr><td>6/abr 4a-f</td><td>Sacola  25448</td><td>112,00</td><td></td><td>10.757,95</td><td></tr>
-<tr><td>6/abr 4a-f</td><td>Sacola Pix Itau  </td><td>100,00</td><td></td><td>10.857,95</td><td></tr>
-<tr><td>7/abr 5a-f</td><td>Sacola  25449</td><td>85,75</td><td></td><td>10.943,70</td><td></tr>
-<tr><td>7/abr 5a-f</td><td>Venda de Literatura  25449</td><td>51,00</td><td></td><td>10.994,70</td><td></tr>
-<tr><td>7/abr 5a-f</td><td>Sacola Pix Inter Venda de Literatura </td><td>51,00</td><td></td><td>11.045,70</td><td></tr>
-<tr><td>7/abr 5a-f</td><td>Faxina  </td><td></td><td>-75,00</td><td>10.970,70</td><td></tr>
-<tr><td>8/abr 6a-f</td><td>Sacola  25450</td><td>157,00</td><td></td><td>11.127,70</td><td></tr>
-<tr><td>8/abr 6a-f</td><td>Sacola Pix Itau  </td><td>100,00</td><td></td><td>11.227,70</td><td></tr>
-<tr><td>9/abr Sab</td><td>Sacola  25451</td><td>80,00</td><td></td><td>11.307,70</td><td></tr>
-<tr><td>9/abr Sab</td><td>Sacola  25452</td><td>105,00</td><td></td><td>11.412,70</td><td></tr>
-<tr><td>9/abr Sab</td><td>Sacola Pix Inter  </td><td>10,00</td><td></td><td>11.422,70</td><td></tr>
-<tr><td>11/abr 2a-f</td><td>Sacola  25453</td><td>169,00</td><td></td><td>11.591,70</td><td></tr>
-<tr><td>12/abr 3a-f</td><td>Sacola  25454</td><td>217,00</td><td></td><td>11.808,70</td><td></tr>
-<tr><td>13/abr 4a-f</td><td>Sacola  25455</td><td>45,00</td><td></td><td>11.853,70</td><td></tr>
-<tr><td>13/abr 4a-f</td><td>Sacola  25456</td><td>127,00</td><td></td><td>11.980,70</td><td></tr>
-<tr><td>14/abr 5a-f</td><td>Sacola  25457</td><td>66,00</td><td></td><td>12.046,70</td><td></tr>
-<tr><td>14/abr 5a-f</td><td>Sacola  25458</td><td>100,00</td><td></td><td>12.146,70</td><td></tr>
-<tr><td>14/abr 5a-f</td><td>Aluguel  </td><td></td><td>-2.300,00</td><td>9.846,70</td><td></tr>
-<tr><td>14/abr 5a-f</td><td>Sacola Pix Inter  </td><td>25,00</td><td></td><td>9.871,70</td><td></tr>
-<tr><td>16/abr Sab</td><td>Sacola  25459</td><td>45,75</td><td></td><td>9.917,45</td><td></tr>
-<tr><td>16/abr Sab</td><td>Sacola Pix Inter  </td><td>25,00</td><td></td><td>9.942,45</td><td></tr>
-<tr><td>16/abr Sab</td><td>Sacola Pix Inter  </td><td>50,00</td><td></td><td>9.992,45</td><td></tr>
-<tr><td>18/abr 2a-f</td><td>Sacola  25460</td><td>79,35</td><td></td><td>10.071,80</td><td></tr>
-<tr><td>18/abr 2a-f</td><td>Sacola Pix Inter  </td><td>10,00</td><td></td><td>10.081,80</td><td></tr>
-<tr><td>19/abr 3a-f</td><td>Sacola Pix Inter Venda de Literatura </td><td>12,90</td><td></td><td>10.094,70</td><td></tr>
-<tr><td>19/abr 3a-f</td><td>Sacola Pix Inter  </td><td>100,00</td><td></td><td>10.194,70</td><td></tr>
-<tr><td>19/abr 3a-f</td><td>Sacola Pix Inter  </td><td>10,00</td><td></td><td>10.204,70</td><td></tr>
-<tr><td>19/abr 3a-f</td><td>Sacola  25461</td><td>83,00</td><td></td><td>10.287,70</td><td></tr>
-<tr><td>20/abr 4a-f</td><td>Compra de Literatura  </td><td></td><td>-484,00</td><td>9.803,70</td><td></tr>
-<tr><td>20/abr 4a-f</td><td>Compra de Folhetos CTO  </td><td></td><td></td><td>9.803,70</td><td></tr>
-<tr><td>20/abr 4a-f</td><td>Sacola Pix Inter  </td><td>50,00</td><td></td><td>9.853,70</td><td></tr>
-<tr><td>20/abr 4a-f</td><td>Certid„o CartÛrio 9o RGI  </td><td></td><td>-139,71</td><td>9.713,99</td><td></tr>
-<tr><td>20/abr 4a-f</td><td>Tarifa Assempar  </td><td></td><td>-115,00</td><td>9.598,99</td><td></tr>
-<tr><td>20/abr 4a-f</td><td>Sacola  25462</td><td>62,60</td><td></td><td>9.661,59</td><td></tr>
-<tr><td>20/abr 4a-f</td><td>Sacola  25463</td><td>118,00</td><td></td><td>9.779,59</td><td></tr>
-<tr><td>22/abr 6a-f</td><td>Repasse ESL  </td><td></td><td>-250,00</td><td>9.529,59</td><td></tr>
-<tr><td>22/abr 6a-f</td><td>Repasse Distrito 29  </td><td></td><td>-50,00</td><td>9.479,59</td><td></tr>
-<tr><td>22/abr 6a-f</td><td>Faxina  </td><td></td><td>-75,00</td><td>9.404,59</td><td></tr>
-<tr><td>22/abr 6a-f</td><td>Sacola Pix Inter  </td><td>20,00</td><td></td><td>9.424,59</td><td></tr>
-<tr><td>22/abr 6a-f</td><td>Sacola  25464</td><td>54,00</td><td></td><td>9.478,59</td><td></tr>
-<tr><td> </td><td>Total  </td><td>2.963,20</td><td>-4.781,14</td><td>9.478,59</td><td></tr>
+<tr><td>1/abr 6a-f</td><td>Saldo Inicial  </td><td  class='valor'></td><td  class='valor'></td><td  class='valor'>11.296,53</td><td></tr>
+<tr><td>1/abr 6a-f</td><td>Sacola  25442</td><td  class='valor'>40,00</td><td  class='valor'></td><td  class='valor'>11.336,53</td><td></tr>
+<tr><td>1/abr 6a-f</td><td>Mercado 10x500g Caf√© </td><td  class='valor'></td><td  class='valor'>-133,11</td><td  class='valor'>11.203,42</td><td></tr>
+<tr><td>2/abr sab</td><td>Sacola  25443</td><td  class='valor'>269,10</td><td  class='valor'></td><td  class='valor'>11.472,52</td><td></tr>
+<tr><td>2/abr sab</td><td>Sacola  25444</td><td  class='valor'>61,00</td><td  class='valor'></td><td  class='valor'>11.533,52</td><td></tr>
+<tr><td>4/abr 2a-f</td><td>Evento RV Bolo 25443</td><td  class='valor'></td><td  class='valor'>-46,00</td><td  class='valor'>11.487,52</td><td></tr>
+<tr><td>4/abr 2a-f</td><td>Evento RV Mercado 25443</td><td  class='valor'></td><td  class='valor'>-193,15</td><td  class='valor'>11.294,37</td><td></tr>
+<tr><td>4/abr 2a-f</td><td>Evento RV Cadeiras Aluguel 25443</td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>11.234,37</td><td></tr>
+<tr><td>4/abr 2a-f</td><td>Sacola  25445</td><td  class='valor'>92,00</td><td  class='valor'></td><td  class='valor'>11.326,37</td><td></tr>
+<tr><td>5/abr 3a-f</td><td>Sacola  25446</td><td  class='valor'>129,75</td><td  class='valor'></td><td  class='valor'>11.456,12</td><td></tr>
+<tr><td>5/abr 3a-f</td><td>Sacola Pix Itau  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>11.466,12</td><td></tr>
+<tr><td>5/abr 3a-f</td><td>Condom√≠nio  </td><td  class='valor'></td><td  class='valor'>-395,57</td><td  class='valor'>11.070,55</td><td></tr>
+<tr><td>5/abr 3a-f</td><td>IPTU  </td><td  class='valor'></td><td  class='valor'>-464,60</td><td  class='valor'>10.605,95</td><td></tr>
+<tr><td>6/abr 4a-f</td><td>Sacola  25447</td><td  class='valor'>40,00</td><td  class='valor'></td><td  class='valor'>10.645,95</td><td></tr>
+<tr><td>6/abr 4a-f</td><td>Sacola  25448</td><td  class='valor'>112,00</td><td  class='valor'></td><td  class='valor'>10.757,95</td><td></tr>
+<tr><td>6/abr 4a-f</td><td>Sacola Pix Itau  </td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>10.857,95</td><td></tr>
+<tr><td>7/abr 5a-f</td><td>Sacola  25449</td><td  class='valor'>85,75</td><td  class='valor'></td><td  class='valor'>10.943,70</td><td></tr>
+<tr><td>7/abr 5a-f</td><td>Venda de Literatura  25449</td><td  class='valor'>51,00</td><td  class='valor'></td><td  class='valor'>10.994,70</td><td></tr>
+<tr><td>7/abr 5a-f</td><td>Sacola Pix Inter Venda de Literatura </td><td  class='valor'>51,00</td><td  class='valor'></td><td  class='valor'>11.045,70</td><td></tr>
+<tr><td>7/abr 5a-f</td><td>Faxina  </td><td  class='valor'></td><td  class='valor'>-75,00</td><td  class='valor'>10.970,70</td><td></tr>
+<tr><td>8/abr 6a-f</td><td>Sacola  25450</td><td  class='valor'>157,00</td><td  class='valor'></td><td  class='valor'>11.127,70</td><td></tr>
+<tr><td>8/abr 6a-f</td><td>Sacola Pix Itau  </td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>11.227,70</td><td></tr>
+<tr><td>9/abr sab</td><td>Sacola  25451</td><td  class='valor'>80,00</td><td  class='valor'></td><td  class='valor'>11.307,70</td><td></tr>
+<tr><td>9/abr sab</td><td>Sacola  25452</td><td  class='valor'>105,00</td><td  class='valor'></td><td  class='valor'>11.412,70</td><td></tr>
+<tr><td>9/abr sab</td><td>Sacola Pix Inter  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>11.422,70</td><td></tr>
+<tr><td>11/abr 2a-f</td><td>Sacola  25453</td><td  class='valor'>169,00</td><td  class='valor'></td><td  class='valor'>11.591,70</td><td></tr>
+<tr><td>12/abr 3a-f</td><td>Sacola  25454</td><td  class='valor'>217,00</td><td  class='valor'></td><td  class='valor'>11.808,70</td><td></tr>
+<tr><td>13/abr 4a-f</td><td>Sacola  25455</td><td  class='valor'>45,00</td><td  class='valor'></td><td  class='valor'>11.853,70</td><td></tr>
+<tr><td>13/abr 4a-f</td><td>Sacola  25456</td><td  class='valor'>127,00</td><td  class='valor'></td><td  class='valor'>11.980,70</td><td></tr>
+<tr><td>14/abr 5a-f</td><td>Sacola  25457</td><td  class='valor'>66,00</td><td  class='valor'></td><td  class='valor'>12.046,70</td><td></tr>
+<tr><td>14/abr 5a-f</td><td>Sacola  25458</td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>12.146,70</td><td></tr>
+<tr><td>14/abr 5a-f</td><td>Aluguel  </td><td  class='valor'></td><td  class='valor'>-2.300,00</td><td  class='valor'>9.846,70</td><td></tr>
+<tr><td>14/abr 5a-f</td><td>Sacola Pix Inter  </td><td  class='valor'>25,00</td><td  class='valor'></td><td  class='valor'>9.871,70</td><td></tr>
+<tr><td>16/abr sab</td><td>Sacola  25459</td><td  class='valor'>45,75</td><td  class='valor'></td><td  class='valor'>9.917,45</td><td></tr>
+<tr><td>16/abr sab</td><td>Sacola Pix Inter  </td><td  class='valor'>25,00</td><td  class='valor'></td><td  class='valor'>9.942,45</td><td></tr>
+<tr><td>16/abr sab</td><td>Sacola Pix Inter  </td><td  class='valor'>50,00</td><td  class='valor'></td><td  class='valor'>9.992,45</td><td></tr>
+<tr><td>18/abr 2a-f</td><td>Sacola  25460</td><td  class='valor'>79,35</td><td  class='valor'></td><td  class='valor'>10.071,80</td><td></tr>
+<tr><td>18/abr 2a-f</td><td>Sacola Pix Inter  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>10.081,80</td><td></tr>
+<tr><td>19/abr 3a-f</td><td>Sacola Pix Inter Venda de Literatura </td><td  class='valor'>12,90</td><td  class='valor'></td><td  class='valor'>10.094,70</td><td></tr>
+<tr><td>19/abr 3a-f</td><td>Sacola Pix Inter  </td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>10.194,70</td><td></tr>
+<tr><td>19/abr 3a-f</td><td>Sacola Pix Inter  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>10.204,70</td><td></tr>
+<tr><td>19/abr 3a-f</td><td>Sacola  25461</td><td  class='valor'>83,00</td><td  class='valor'></td><td  class='valor'>10.287,70</td><td></tr>
+<tr><td>20/abr 4a-f</td><td>Compra de Literatura  </td><td  class='valor'></td><td  class='valor'>-484,00</td><td  class='valor'>9.803,70</td><td></tr>
+<tr><td>20/abr 4a-f</td><td>Compra de Folhetos CTO  </td><td  class='valor'></td><td  class='valor'></td><td  class='valor'>9.803,70</td><td></tr>
+<tr><td>20/abr 4a-f</td><td>Sacola Pix Inter  </td><td  class='valor'>50,00</td><td  class='valor'></td><td  class='valor'>9.853,70</td><td></tr>
+<tr><td>20/abr 4a-f</td><td>Certid√£o Cart√≥rio 9o RGI  </td><td  class='valor'></td><td  class='valor'>-139,71</td><td  class='valor'>9.713,99</td><td></tr>
+<tr><td>20/abr 4a-f</td><td>Tarifa Assempar  </td><td  class='valor'></td><td  class='valor'>-115,00</td><td  class='valor'>9.598,99</td><td></tr>
+<tr><td>20/abr 4a-f</td><td>Sacola  25462</td><td  class='valor'>62,60</td><td  class='valor'></td><td  class='valor'>9.661,59</td><td></tr>
+<tr><td>20/abr 4a-f</td><td>Sacola  25463</td><td  class='valor'>118,00</td><td  class='valor'></td><td  class='valor'>9.779,59</td><td></tr>
+<tr><td>22/abr 6a-f</td><td>Repasse ESL  </td><td  class='valor'></td><td  class='valor'>-250,00</td><td  class='valor'>9.529,59</td><td></tr>
+<tr><td>22/abr 6a-f</td><td>Repasse Distrito 29  </td><td  class='valor'></td><td  class='valor'>-50,00</td><td  class='valor'>9.479,59</td><td></tr>
+<tr><td>22/abr 6a-f</td><td>Faxina  </td><td  class='valor'></td><td  class='valor'>-75,00</td><td  class='valor'>9.404,59</td><td></tr>
+<tr><td>22/abr 6a-f</td><td>Sacola Pix Inter  </td><td  class='valor'>20,00</td><td  class='valor'></td><td  class='valor'>9.424,59</td><td></tr>
+<tr><td>22/abr 6a-f</td><td>Sacola  25464</td><td  class='valor'>54,00</td><td  class='valor'></td><td  class='valor'>9.478,59</td><td></tr>
+<tr><td> </td><td>Total  </td><td  class='valor'>2.963,20</td><td  class='valor'>-4.781,14</td><td  class='valor'>9.478,59</td><td></tr>
 
 
 
@@ -169,7 +179,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 
 <!-- Footer --> 
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top" >
-  <p>Por princ&iacute;pio, A.A. deve permanecer pobre, ter apenas o necess&aacute;rio para as despesas correntes do m&ecirc;s mais uma reserva prudente para tr&ecirc;s meses.</p>
+  <p>Por princ&iacute;pio, A.A. deve permanecer pobre, ter apenas o necess&aacute;rio para as despesas correntes do m&ecirc;s mais uma reserva prudente.</p>
 
 <!--
 <button class="w3-button w3-black w3-padding-large w3-margin-bottom">AGO/21</button>
