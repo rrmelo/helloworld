@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Tesouraria do Grupo / 2024</title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width<BR> initial-scale=1">
+  <meta name="viewport" content="width=device-width<BR> initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+
+
+.valor {
+  text-align: right;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+</style>
+</head>
+
+<body>
+
+<header align="center" class="w3-container w3-card">
+  <h4>Tesouraria do Grupo</h4>
+</header>
+
+<!-- <h4 align="center">2024</h4> -->
+
+<div style="overflow-x: auto;">
+
+
+<!-- <button class="accordion"><strong>FEVEREIRO (01/02/24 - 12/02/24)</strong></button>
+  <div class="panel"> -->
+ 
+  <table class="table table-hover table-bordered">
+
+    <tr>
+      <th style="text-align:left">Data</th>
+      <th style="text-align:left">Descrição</th>
+      <th style="text-align:right">+</th>
+      <th style="text-align:right">-</th>
+      <th style="text-align:right">Saldo</th>
+    </tr>
+
+<tr><td>16/02/24 6ª-feira</td><td>Faxina  </td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>6.119,97</td></tr>
+<tr><td>16/02/24 6ª-feira</td><td>Pix  </td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>6.179,97</td></tr>
+<tr><td>16/02/24 6ª-feira</td><td>Pix  </td><td  class='valor'>13,62</td><td  class='valor'></td><td  class='valor'>6.177,97</td></tr>
+<tr><td>16/02/24 6ª-feira</td><td>Sacola 26170 </td><td  class='valor'>121,00</td><td  class='valor'></td><td  class='valor'>6.164,35</td></tr>
+<tr><td>15/02/24 5ª-feira</td><td>Pix  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.043,35</td></tr>
+<tr><td>15/02/24 5ª-feira</td><td>Sacola 26169 </td><td  class='valor'>107,00</td><td  class='valor'></td><td  class='valor'>6.033,35</td></tr>
+<tr><td>14/02/24 4ª-feira</td><td>Sacola 26168 </td><td  class='valor'>69,00</td><td  class='valor'></td><td  class='valor'>5.926,35</td></tr>
+<tr><td>12/02/24 2ª-feira</td><td>Pix  </td><td  class='valor'>1,00</td><td  class='valor'></td><td  class='valor'>5.857,35</td></tr>
+<tr><td>12/02/24 2ª-feira</td><td>Sacola 26167 </td><td  class='valor'>81,75</td><td  class='valor'></td><td  class='valor'>5.856,35</td></tr>
+<tr><td>12/02/24 2ª-feira</td><td>Pix  </td><td  class='valor'>200,00</td><td  class='valor'></td><td  class='valor'>5.774,60</td></tr>
+<tr><td>10/02/24 Sábado</td><td>Pix  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.574,60</td></tr>
+<tr><td>10/02/24 Sábado</td><td>Sacola 26166 </td><td  class='valor'>46,00</td><td  class='valor'></td><td  class='valor'>5.564,60</td></tr>
+<tr><td>10/02/24 Sábado</td><td>Venda de Literatura Livro Azul </td><td  class='valor'>62,00</td><td  class='valor'></td><td  class='valor'>5.518,60</td></tr>
+<tr><td>09/02/24 6ª-feira</td><td>Light Servicos De Eletricidade S A Pix </td><td  class='valor'></td><td  class='valor'>-268,93</td><td  class='valor'>5.456,60</td></tr>
+<tr><td>09/02/24 6ª-feira</td><td>Faxina Pix </td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>5.725,53</td></tr>
+<tr><td>09/02/24 6ª-feira</td><td>Sacola 26165 </td><td  class='valor'>62,10</td><td  class='valor'></td><td  class='valor'>5.785,53</td></tr>
+<tr><td>08/02/24 5ª-feira</td><td>Sacola 26164 </td><td  class='valor'>67,00</td><td  class='valor'></td><td  class='valor'>5.723,43</td></tr>
+<tr><td>07/02/24 4ª-feira</td><td>Pix  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.656,43</td></tr>
+<tr><td>07/02/24 4ª-feira</td><td>Pix  </td><td  class='valor'>11,20</td><td  class='valor'></td><td  class='valor'>5.646,43</td></tr>
+<tr><td>07/02/24 4ª-feira</td><td>Sacola 26163 </td><td  class='valor'>30,00</td><td  class='valor'></td><td  class='valor'>5.635,23</td></tr>
+<tr><td>06/02/24 3ª-feira</td><td>Zoom Pix </td><td  class='valor'></td><td  class='valor'>-80,00</td><td  class='valor'>5.605,23</td></tr>
+<tr><td>06/02/24 3ª-feira</td><td>Pix  </td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>5.685,23</td></tr>
+<tr><td>06/02/24 3ª-feira</td><td>Sacola 26162 </td><td  class='valor'>49,00</td><td  class='valor'></td><td  class='valor'>5.683,23</td></tr>
+<tr><td>06/02/24 3ª-feira</td><td>Pix  </td><td  class='valor'>50,00</td><td  class='valor'></td><td  class='valor'>5.634,23</td></tr>
+<tr><td>06/02/24 3ª-feira</td><td>Pix  </td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>5.584,23</td></tr>
+<tr><td>06/02/24 3ª-feira</td><td>Pix  </td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>5.484,23</td></tr>
+<tr><td>05/02/24 2ª-feira</td><td>Aluguel  </td><td  class='valor'></td><td  class='valor'>-1.921,22</td><td  class='valor'>5.384,23</td></tr>
+<tr><td>05/02/24 2ª-feira</td><td>Faxina Pix </td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>7.305,45</td></tr>
+<tr><td>05/02/24 2ª-feira</td><td>Pix  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>7.365,45</td></tr>
+<tr><td>05/02/24 2ª-feira</td><td>Pix  </td><td  class='valor'>15,00</td><td  class='valor'></td><td  class='valor'>7.355,45</td></tr>
+<tr><td>05/02/24 2ª-feira</td><td>Pix  </td><td  class='valor'>16,66</td><td  class='valor'></td><td  class='valor'>7.340,45</td></tr>
+<tr><td>05/02/24 2ª-feira</td><td>Sacola 26161 </td><td  class='valor'>256,50</td><td  class='valor'></td><td  class='valor'>7.323,79</td></tr>
+<tr><td>04/02/24 Domingo</td><td>Pix  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>7.067,29</td></tr>
+<tr><td>03/02/24 Sábado</td><td>Pix  </td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>7.057,29</td></tr>
+<tr><td>03/02/24 Sábado</td><td>Pix  </td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>7.055,29</td></tr>
+<tr><td>03/02/24 Sábado</td><td>Sacola 26160 </td><td  class='valor'>59,00</td><td  class='valor'></td><td  class='valor'>7.045,29</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Contribuição ESL </td><td  class='valor'></td><td  class='valor'>-250,00</td><td  class='valor'>6.986,29</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Mercado Compra tampo novo do vaso </td><td  class='valor'></td><td  class='valor'>-139,99</td><td  class='valor'>7.236,29</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Contribuição Distrito 29 </td><td  class='valor'></td><td  class='valor'>-50,00</td><td  class='valor'>7.376,28</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Compra de Literatura O melhor de bill x 3 </td><td  class='valor'></td><td  class='valor'>-40,20</td><td  class='valor'>7.426,28</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Sacola 26158 </td><td  class='valor'>0,00</td><td  class='valor'></td><td  class='valor'>7.466,48</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Pix  </td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>7.466,48</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Venda de literatura Melhor de Bill </td><td  class='valor'>15,00</td><td  class='valor'></td><td  class='valor'>7.464,48</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Pix  </td><td  class='valor'>20,00</td><td  class='valor'></td><td  class='valor'>7.449,48</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Sacola 26159 </td><td  class='valor'>97,00</td><td  class='valor'></td><td  class='valor'>7.429,48</td></tr>
+<tr><td>02/02/24 6ª-feira</td><td>Pix  </td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>7.332,48</td></tr>
+<tr><td>01/02/24 5ª-feira</td><td>Sacola 26157 </td><td  class='valor'>83,00</td><td  class='valor'></td><td  class='valor'>7.232,48</td></tr>
+<tr><td>01/02/24 5ª-feira</td><td>Saldo inicial  </td><td  class='valor'></td><td  class='valor'></td><td  class='valor'>7.149,48</td></tr>
+
+
+<!-- <tr><td></td><td></td><td  class='valor'></td><td  class='valor'>7.149,48</td></tr> -->
+
+  </table>
+
+<!-- </div> -->
+
+
+
+
+
+
+
+
+<button class="accordion"><strong>JANEIRO (01/01/24 - 31/01/24)</strong></button>
+  <div class="panel">
+ 
+  <table class="table table-hover table-bordered">
+
+    <tr>
+      <th style="text-align:left">Data</th>
+      <th style="text-align:left">Descrição</th>
+      <th style="text-align:right">+</th>
+      <th style="text-align:right">-</th>
+      <th style="text-align:right">Saldo</th>
+    </tr>
+
+<tr><td>31/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>7.149,48</td></tr>
+<tr><td>31/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>15,42</td><td  class='valor'></td><td  class='valor'>7.139,48</td></tr>
+<tr><td>31/01/24 4ª-feira</td><td>Sacola 26156 </td><td  class='valor'>85,00</td><td  class='valor'></td><td  class='valor'>7.124,06</td></tr>
+<tr><td>30/01/24 3ª-feira</td><td>Mercado Filtro d'agua e vela </td><td  class='valor'></td><td  class='valor'>-142,00</td><td  class='valor'>7.039,06</td></tr>
+<tr><td>30/01/24 3ª-feira</td><td>Sacola 26154 </td><td  class='valor'>57,00</td><td  class='valor'></td><td  class='valor'>7.181,06</td></tr>
+<tr><td>30/01/24 3ª-feira</td><td>Sacola 26155 </td><td  class='valor'>162,25</td><td  class='valor'></td><td  class='valor'>7.124,06</td></tr>
+<tr><td>29/01/24 2ª-feira</td><td>Sacola  Pix</td><td  class='valor'>30,00</td><td  class='valor'></td><td  class='valor'>6.961,81</td></tr>
+<tr><td>29/01/24 2ª-feira</td><td>Sacola 26153 </td><td  class='valor'>221,35</td><td  class='valor'></td><td  class='valor'>6.931,81</td></tr>
+<tr><td>27/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.710,46</td></tr>
+<tr><td>27/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.700,46</td></tr>
+<tr><td>27/01/24 Sábado</td><td>Sacola 26152 </td><td  class='valor'>57,00</td><td  class='valor'></td><td  class='valor'>6.690,46</td></tr>
+<tr><td>26/01/24 6ª-feira</td><td>Faxina  Pix</td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>6.633,46</td></tr>
+<tr><td>26/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>1,01</td><td  class='valor'></td><td  class='valor'>6.693,46</td></tr>
+<tr><td>26/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.692,45</td></tr>
+<tr><td>26/01/24 6ª-feira</td><td>Sacola 26151 </td><td  class='valor'>74,00</td><td  class='valor'></td><td  class='valor'>6.682,45</td></tr>
+<tr><td>25/01/24 5ª-feira</td><td>Mercado Assai Atacadista papel interfolha 6000</td><td  class='valor'></td><td  class='valor'>-95,40</td><td  class='valor'>6.608,45</td></tr>
+<tr><td>25/01/24 5ª-feira</td><td>Sacola  Pix</td><td  class='valor'>3,13</td><td  class='valor'></td><td  class='valor'>6.703,85</td></tr>
+<tr><td>25/01/24 5ª-feira</td><td>Sacola  Pix</td><td  class='valor'>5,00</td><td  class='valor'></td><td  class='valor'>6.700,72</td></tr>
+<tr><td>25/01/24 5ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.695,72</td></tr>
+<tr><td>25/01/24 5ª-feira</td><td>Sacola 26150 </td><td  class='valor'>20,00</td><td  class='valor'></td><td  class='valor'>6.685,72</td></tr>
+<tr><td>25/01/24 5ª-feira</td><td>Sacola 26149 </td><td  class='valor'>74,30</td><td  class='valor'></td><td  class='valor'>6.665,72</td></tr>
+<tr><td>24/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>5,82</td><td  class='valor'></td><td  class='valor'>6.591,42</td></tr>
+<tr><td>24/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.585,60</td></tr>
+<tr><td>24/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.575,60</td></tr>
+<tr><td>24/01/24 4ª-feira</td><td>Sacola 26148 </td><td  class='valor'>59,00</td><td  class='valor'></td><td  class='valor'>6.565,60</td></tr>
+<tr><td>23/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>6.506,60</td></tr>
+<tr><td>23/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.504,60</td></tr>
+<tr><td>23/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.494,60</td></tr>
+<tr><td>23/01/24 3ª-feira</td><td>Sacola 26147 </td><td  class='valor'>66,00</td><td  class='valor'></td><td  class='valor'>6.484,60</td></tr>
+<tr><td>22/01/24 2ª-feira</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>6.418,60</td></tr>
+<tr><td>22/01/24 2ª-feira</td><td>Sacola  Pix</td><td  class='valor'>5,00</td><td  class='valor'></td><td  class='valor'>6.416,60</td></tr>
+<tr><td>22/01/24 2ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.411,60</td></tr>
+<tr><td>22/01/24 2ª-feira</td><td>Sacola  Pix</td><td  class='valor'>14,49</td><td  class='valor'></td><td  class='valor'>6.401,60</td></tr>
+<tr><td>22/01/24 2ª-feira</td><td>Sacola 26146 </td><td  class='valor'>197,00</td><td  class='valor'></td><td  class='valor'>6.387,11</td></tr>
+<tr><td>19/01/24 6ª-feira</td><td>Faxina  Pix</td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>6.190,11</td></tr>
+<tr><td>19/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>6.250,11</td></tr>
+<tr><td>19/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.248,11</td></tr>
+<tr><td>19/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>50,00</td><td  class='valor'></td><td  class='valor'>6.238,11</td></tr>
+<tr><td>19/01/24 6ª-feira</td><td>Sacola 26145 </td><td  class='valor'>106,00</td><td  class='valor'></td><td  class='valor'>6.188,11</td></tr>
+<tr><td>18/01/24 5ª-feira</td><td>Sacola  Pix</td><td  class='valor'>5,00</td><td  class='valor'></td><td  class='valor'>6.082,11</td></tr>
+<tr><td>18/01/24 5ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.077,11</td></tr>
+<tr><td>18/01/24 5ª-feira</td><td>Sacola 26144 </td><td  class='valor'>86,00</td><td  class='valor'></td><td  class='valor'>6.067,11</td></tr>
+<tr><td>17/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.981,11</td></tr>
+<tr><td>17/01/24 4ª-feira</td><td>Sacola 26143 </td><td  class='valor'>82,00</td><td  class='valor'></td><td  class='valor'>5.971,11</td></tr>
+<tr><td>16/01/24 3ª-feira</td><td>Compra de Literatura Esc Serv Locais De Alcoolicos Anonimos Pix Das trevas para a luz</td><td  class='valor'></td><td  class='valor'>-62,00</td><td  class='valor'>5.889,11</td></tr>
+<tr><td>16/01/24 3ª-feira</td><td>Compra de Literatura Esc Serv Locais De Alcoolicos Anonimos Pix Livre por dentro</td><td  class='valor'></td><td  class='valor'>-49,00</td><td  class='valor'>5.951,11</td></tr>
+<tr><td>16/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.000,11</td></tr>
+<tr><td>16/01/24 3ª-feira</td><td>Venda de literatura Livro Azul </td><td  class='valor'>62,00</td><td  class='valor'></td><td  class='valor'>5.990,11</td></tr>
+<tr><td>16/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>5.928,11</td></tr>
+<tr><td>16/01/24 3ª-feira</td><td>Sacola 26142 </td><td  class='valor'>103,00</td><td  class='valor'></td><td  class='valor'>5.828,11</td></tr>
+<tr><td>15/01/24 2ª-feira</td><td>Sacola 26141 </td><td  class='valor'>192,00</td><td  class='valor'></td><td  class='valor'>5.725,11</td></tr>
+<tr><td>13/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>5.533,11</td></tr>
+<tr><td>13/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.531,11</td></tr>
+<tr><td>13/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.521,11</td></tr>
+<tr><td>13/01/24 Sábado</td><td>Sacola 26140 </td><td  class='valor'>32,00</td><td  class='valor'></td><td  class='valor'>5.511,11</td></tr>
+<tr><td>12/01/24 6ª-feira</td><td>Faxina  Pix</td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>5.479,11</td></tr>
+<tr><td>12/01/24 6ª-feira</td><td>Copo descartavel 1000 Assai Atacadista Pix</td><td  class='valor'></td><td  class='valor'>-42,03</td><td  class='valor'>5.539,11</td></tr>
+<tr><td>12/01/24 6ª-feira</td><td>Sacola 26139 </td><td  class='valor'>122,25</td><td  class='valor'></td><td  class='valor'>5.581,14</td></tr>
+<tr><td>11/01/24 5ª-feira</td><td>Material escritório 10 blocos livro ata </td><td  class='valor'></td><td  class='valor'>-136,50</td><td  class='valor'>5.458,89</td></tr>
+<tr><td>11/01/24 5ª-feira</td><td>Venda de literatura Das trevas para luz Pix</td><td  class='valor'>62,00</td><td  class='valor'></td><td  class='valor'>5.595,39</td></tr>
+<tr><td>11/01/24 5ª-feira</td><td>Sacola 26138 </td><td  class='valor'>128,50</td><td  class='valor'></td><td  class='valor'>5.533,39</td></tr>
+<tr><td>10/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>5.404,89</td></tr>
+<tr><td>10/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.402,89</td></tr>
+<tr><td>10/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>13,17</td><td  class='valor'></td><td  class='valor'>5.392,89</td></tr>
+<tr><td>10/01/24 4ª-feira</td><td>Sacola 26137 </td><td  class='valor'>86,25</td><td  class='valor'></td><td  class='valor'>5.379,72</td></tr>
+<tr><td>09/01/24 3ª-feira</td><td>Contribuição Esc Serv Locais De Alcoolicos Anonimos Pix</td><td  class='valor'></td><td  class='valor'>-250,00</td><td  class='valor'>5.293,47</td></tr>
+<tr><td>09/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>5.543,47</td></tr>
+<tr><td>09/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.541,47</td></tr>
+<tr><td>09/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.531,47</td></tr>
+<tr><td>09/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>40,00</td><td  class='valor'></td><td  class='valor'>5.521,47</td></tr>
+<tr><td>09/01/24 3ª-feira</td><td>Sacola 26136 </td><td  class='valor'>48,00</td><td  class='valor'></td><td  class='valor'>5.481,47</td></tr>
+<tr><td>08/01/24 2ª-feira</td><td>Sacola  Pix</td><td  class='valor'>14,89</td><td  class='valor'></td><td  class='valor'>5.433,47</td></tr>
+<tr><td>08/01/24 2ª-feira</td><td>Sacola  Pix</td><td  class='valor'>20,00</td><td  class='valor'></td><td  class='valor'>5.418,58</td></tr>
+<tr><td>08/01/24 2ª-feira</td><td>Sacola 26135 </td><td  class='valor'>167,55</td><td  class='valor'></td><td  class='valor'>5.398,58</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Zoom reunião on-line  Pix</td><td  class='valor'></td><td  class='valor'>-80,00</td><td  class='valor'>5.231,03</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>5.311,03</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Venda de literatura folheto O AA é pra vc? 11  </td><td  class='valor'>5,00</td><td  class='valor'></td><td  class='valor'>5.309,03</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>7,77</td><td  class='valor'></td><td  class='valor'>5.304,03</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>5.296,26</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Sacola  Pix</td><td  class='valor'>50,00</td><td  class='valor'></td><td  class='valor'>5.286,26</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Sacola   </td><td  class='valor'>64,30</td><td  class='valor'></td><td  class='valor'>5.236,26</td></tr>
+<tr><td>06/01/24 Sábado</td><td>Sacola 26134 </td><td  class='valor'>94,00</td><td  class='valor'></td><td  class='valor'>5.171,96</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Aluguel  </td><td  class='valor'></td><td  class='valor'>-1.437,42</td><td  class='valor'>5.077,96</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Contribuição Distrito 29 dezembro e janeiro</td><td  class='valor'></td><td  class='valor'>-100,00</td><td  class='valor'>6.515,38</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Faxina  Pix</td><td  class='valor'></td><td  class='valor'>-60,00</td><td  class='valor'>6.615,38</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>2,00</td><td  class='valor'></td><td  class='valor'>6.675,38</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>9,21</td><td  class='valor'></td><td  class='valor'>6.673,38</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>50,00</td><td  class='valor'></td><td  class='valor'>6.664,17</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Sacola 26132 </td><td  class='valor'>53,00</td><td  class='valor'></td><td  class='valor'>6.614,17</td></tr>
+<tr><td>05/01/24 6ª-feira</td><td>Sacola  Pix</td><td  class='valor'>100,00</td><td  class='valor'></td><td  class='valor'>6.561,17</td></tr>
+<tr><td>04/01/24 5ª-feira</td><td>Sacola  Pix</td><td  class='valor'>10,00</td><td  class='valor'></td><td  class='valor'>6.461,17</td></tr>
+<tr><td>04/01/24 5ª-feira</td><td>Venda de literatura Livro Azul Pix</td><td  class='valor'>62,00</td><td  class='valor'></td><td  class='valor'>6.451,17</td></tr>
+<tr><td>04/01/24 5ª-feira</td><td>Sacola 26131 </td><td  class='valor'>139,50</td><td  class='valor'></td><td  class='valor'>6.389,17</td></tr>
+<tr><td>03/01/24 4ª-feira</td><td>Conta de luz Light Servicos De Eletricidade S A Pix janeiro</td><td  class='valor'></td><td  class='valor'>-180,44</td><td  class='valor'>6.249,67</td></tr>
+<tr><td>03/01/24 4ª-feira</td><td>Conta de luz Light Servicos De Eletricidade S A Pix dezembro</td><td  class='valor'></td><td  class='valor'>-84,91</td><td  class='valor'>6.430,11</td></tr>
+<tr><td>03/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>3,20</td><td  class='valor'></td><td  class='valor'>6.515,02</td></tr>
+<tr><td>03/01/24 4ª-feira</td><td>Sacola  Pix</td><td  class='valor'>20,00</td><td  class='valor'></td><td  class='valor'>6.511,82</td></tr>
+<tr><td>03/01/24 4ª-feira</td><td>Sacola 26130 </td><td  class='valor'>69,00</td><td  class='valor'></td><td  class='valor'>6.491,82</td></tr>
+<tr><td>02/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>3,70</td><td  class='valor'></td><td  class='valor'>6.422,82</td></tr>
+<tr><td>02/01/24 3ª-feira</td><td>Sacola 26129 </td><td  class='valor'>35,00</td><td  class='valor'></td><td  class='valor'>6.419,12</td></tr>
+<tr><td>02/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>40,00</td><td  class='valor'></td><td  class='valor'>6.384,12</td></tr>
+<tr><td>02/01/24 3ª-feira</td><td>Sacola 26128 </td><td  class='valor'>50,00</td><td  class='valor'></td><td  class='valor'>6.344,12</td></tr>
+<tr><td>02/01/24 3ª-feira</td><td>Sacola  Pix</td><td  class='valor'>60,00</td><td  class='valor'></td><td  class='valor'>6.294,12</td></tr>
+<tr><td>01/01/24 2ª-feira</td><td>Saldo inicial  Banco inter</td><td  class='valor'>1.952,00</td><td  class='valor'></td><td  class='valor'>6.234,12</td></tr>
+<tr><td>01/01/24 2ª-feira</td><td>Saldo inicial  Em especie</td><td  class='valor'>4.282,12</td><td  class='valor'></td><td  class='valor'>4.282,12</td></tr>
+
+
+
+
+  </table>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<BR><BR><BR><BR>
+
+<div align="center">   <img src="Logo.png" width="100" height="100"> </div>
+
+<BR><BR><BR>
+<!-- Footer --> 
+
+<!--
+
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top" >
+
+ <p>Sétima Tradição</p>
+  <p>Por princ&iacute;pio, A.A. deve permanecer pobre. A pol&iacute;tica financeira do Grupo se resume em ter apenas o necess&aacute;rio para as despesas correntes do m&ecirc;s mais uma reserva prudente. (BILL W, 1953, p. 147)</p>
+  <p>Essa reserva varia de grupo para grupo, no nosso foi estabelecido pela consciência uma reserva de três meses. Três vezes as despesas fixas mensais. O excedente enviamos para os escritórios de serviços de A.A.</p>
+
+  <a href="2204.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">ABR/22</button></a>
+  <a href="2205.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">MAI/22</button></a>
+  <a href="2206.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">JUN/22</button></a>
+  <a href="2207.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">JUL/22</button></a>
+  <a href="2208.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">AGO/22</button></a>
+  <a href="2209.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">SET/22</button></a>
+  <a href="2210.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">OUT/22</button></a>
+
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">SET/21</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">OUT/21</button>
+
+</footer>
+-->
+
+
+</body>
