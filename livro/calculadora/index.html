@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculadora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+ <div class="container" align="center">
+   <h3>Calculadora</h3><hr>
+
+
+<form id="Form">
+ 
+<table  class="form-inline"> <tr><td>
+
+     <label class="sr-only" for="sexo">Sexo:</label><td>Genero</td><td>
+     <select class="form-control" id="sexo"´placeholder="Idade (anos)" name="sexo" >
+         <option value="masculino">Masculino</option>
+         <option value="feminino">Feminino</option>
+     </select>  
+   </td></tr>
+    
+    <tr><td> 
+     <label class="sr-only" for="age">Idade</label><td>Idade</td><td>
+     <input type="text" class="form-control" id="age" placeholder="Idade (anos)" >
+   </td></tr>
+
+   <tr><td>
+     <label class="sr-only" for="height">Altura</label><td>Altura</td><td>
+     <input type="text" class="form-control" id="height" placeholder="Altura (cm)">
+  </td></tr>
+ 
+   <tr><td>
+     <label class="sr-only" for="weight">Peso</label><td>Peso</td><td>
+     <input type="text" class="form-control" id="weight" placeholder="Peso (kg)"  >
+   </td></tr>
+
+   <tr><td> <div class="form-group">
+     <label class="sr-only" for="barriga">Barriga</label><td>Barriga</td><td>
+     <input type="text" class="form-control" id="barriga" placeholder="Barriga (cm)">
+    </div></td></tr>
+
+    <tr><td><div class="form-group"><td>Pescoço</td><td>
+        <label class="sr-only" for="pescoco">Pescoço</label>
+        <input type="text" class="form-control" id="pescoco" placeholder="Pescoço (cm)">
+       </div></td></tr>
+   
+       <tr>
+         <td ALIGN="CENTER" colspan="2"> <button type="submit" onclick="calcular()" class="btn btn-default">Calcular</button></td></tr>
+  
+    
+   
+        
+</table></form>
+
+
+
+<hr><div id="resultimc"></div>
+<hr><div id="resultadotmb"></div>
+<hr><div id="resultadobf"></div>
+<hr><br><br><br>
+  <script>
+      document.getElementById('Form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          // Pegando os valores do peso e altura
+          var weight = parseFloat(document.getElementById('weight').value);
+          var height = parseFloat(document.getElementById('height').value);
+          var altura = height / 100;
+          var imc = weight / (altura * altura);
+
+                        // Exibindo o resultado
+                       // var resultElement = document.getElementById('result');
+          //resultElement.textContent = 'Seu IMC: ' + imc.toFixed(2);
+     
+          
+          var imc18 = '<table><tr><td colspan="2"><strong>INDICE DE MASSA CORPORAL (IMC)</strong>' + 
+               '<br>IMC = ALTURA / (PESO X PESO)</td>/tr><tr>' +
+               '<td><h1>' + imc.toFixed(2) + 
+               '</h1><br>SEU IMC</td><td><strong>00 - 18 | Abaixo do peso</strong>'+
+               '<br>18 - 25 | Peso Normal' +
+               '<br>25 - 30 | Sobrepeso' +
+               '<br>30 - 35 | Obeso grau 1' +
+               '<br>35 - 40 | Obeso grau 2' +
+               '<br>40 - oo | Obeso grau 3</td></tr><tr><td colspan="2"><hr></td></tr>';
+
+              var imc20 =  '<table><tr><td colspan="2"><strong>INDICE DE MASSA CORPORAL (IMC)</strong>' + 
+               '<br>IMC = ALTURA / (PESO X PESO)</td>/tr><tr>' +
+               '<td><h1>' + imc.toFixed(2) + 
+               '</h1><br>SEU IMC</td><td>00 - 18 | Abaixo do peso' +
+               '<br><strong>18 - 25 | Peso Normal</strong>' +
+               '<br>25 - 30 | Sobrepeso' +
+               '<br>30 - 35 | Obeso grau 1' +
+               '<br>35 - 40 | Obeso grau 2' +
+               '<br>40 - oo | Obeso grau 3</td></tr><tr><td colspan="2"><hr></td></tr>';
+
+              var imc25 =  '<table><tr><td colspan="2"><strong>INDICE DE MASSA CORPORAL (IMC)</strong>' + 
+               '<br>IMC = ALTURA / (PESO X PESO)</td>/tr><tr>' +
+               '<td><h1>' + imc.toFixed(2) + 
+               '</h1><br>SEU IMC</td><td>00 - 18 | Abaixo do peso'+
+               '<br>18 - 25 | Peso Normal'+
+               '<br><strong>25 - 30 | Sobrepeso</strong>'+
+               '<br>30 - 35 | Obeso grau 1'+
+               '<br>35 - 40 | Obeso grau 2'+
+               '<br>40 - oo | Obeso grau 3</td></tr><tr><td colspan="2"><hr></td></tr>';
+
+               var imc30 =  '<table><tr><td colspan="2"><strong>INDICE DE MASSA CORPORAL (IMC)</strong>' + 
+               '<br>IMC = ALTURA / (PESO X PESO)</td>/tr><tr>' +
+               '<td><h1>' + imc.toFixed(2) + 
+               '</h1><br>SEU IMC</td><td>00 - 18 | Abaixo do peso'+
+               '<br>18 - 25 | Peso Normal'+
+               '<br>25 - 30 | Sobrepeso'+
+               '<br><strong>30 - 35 | Obeso grau 1</strong>'+
+               '<br>35 - 40 | Obeso grau 2'+
+               '<br>40 - oo | Obeso grau 3</td></tr><tr><td colspan="2"><hr></td></tr>';
+
+              var imc35 =   '<table><tr><td colspan="2"><strong>INDICE DE MASSA CORPORAL (IMC)</strong>' + 
+               '<br>IMC = ALTURA / (PESO X PESO)</td>/tr><tr>' +
+               '<td><h1>' + imc.toFixed(2) + 
+               '</h1><br>SEU IMC</td><td>00 - 18 | Abaixo do peso'+
+               '<br>18 - 25 | Peso Normal'+
+               '<br>25 - 30 | Sobrepeso'+
+               '<br>30 - 35 | Obeso grau 1'+
+               '<br><strong>35 - 40 | Obeso grau 2</strong>'+
+               '<br>40 - oo | Obeso grau 3</td></tr><tr><td colspan="2"><hr></td></tr>';
+
+              var imc40 =  '<table><tr><td colspan="2"><strong>INDICE DE MASSA CORPORAL (IMC)</strong>' + 
+               '<br>IMC = ALTURA / (PESO X PESO)</td>/tr><tr>' +
+               '<td><h1>' + 
+               imc.toFixed(2) + 
+               '</h1><br>SEU IMC</td><td>00 - 18 | Abaixo do peso' +
+               '<br>18 - 25 | Peso Normal' +
+               '<br>25 - 30 | Sobrepeso' +
+               '<br><strong>30 - 35 | Obeso grau 1' +
+               '<br>35 - 40 | Obeso grau 2' +
+               '<br><strong>40 - oo | Obeso grau 3</strong></td></tr><tr><td colspan="2"><hr></td></tr>';
+
+     
+
+          // Interpretando o IMC
+          if (imc < 18.5) {
+            var element = document.getElementById("resultimc");
+                element.innerHTML = imc18;
+          } else if (imc < 24.9) {
+            var element = document.getElementById("resultimc");
+            element.innerHTML = imc20;
+          } else if (imc < 29.9) {
+            var element = document.getElementById("resultimc");
+            element.innerHTML = imc25;
+          } else if (imc < 34.9) {
+            var element = document.getElementById("resultimc");
+            element.innerHTML = imc30;
+          } else if (imc < 39.9) {
+            var element = document.getElementById("resultimc");
+            element.innerHTML = imc35;
+          } else {
+            var element = document.getElementById("resultimc");
+            element.innerHTML = imc40;
+          }
+      });
+  
+  
+      function calcularTMB(sexo, peso, altura, idade) {
+            let tmb;
+
+            if (sexo === 'masculino') {
+                tmb = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
+            } else if (sexo === 'feminino') {
+                tmb = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade);
+            } else {
+                return "Por favor, insira 'masculino' ou 'feminino' como sexo.";
+            }
+
+            return tmb;
+        }
+
+        function calcular() {
+            const sexo = document.getElementById('sexo').value;
+            const peso = parseFloat(document.getElementById('weight').value);
+            const altura = parseFloat(document.getElementById('height').value);
+            const idade = parseInt(document.getElementById('age').value);
+            const tmb = calcularTMB(sexo, peso, altura, idade);
+            const tmb7 = tmb * 7;
+            const tmb12 = tmb * 1.2;
+            const tmb13 = tmb * 1.375;
+            const tmb15 = tmb * 1.55;
+            const tmb17 = tmb * 1.725;
+            const tmb19 = tmb * 1.9;
+            document.getElementById('resultadotmb').innerHTML = "<table><tr><td colspan='2'><strong>TAXA DE METABOLISMO BASA (TMB)" + 
+            "</strong><br>HARRIS BENEDICT FORMULA<br>66.5 + (13.75 X PESO) + (5.003 X ALTURA) - (6.75 X IDADE)</td></tr>" +
+            "<tr><td><h1>" + tmb.toFixed(0) + 
+            "</h1>tmb calorias por dia.<br><h1>" + tmb7.toFixed(0) + 
+            "</h1>tmb calorias por semana</td><td>" +
+	    "Nivel de atividade fisica diaria<br><strong>" +
+	    tmb12.toFixed(0) + "</strong> cal/dia | Sedentario (nenhuma atividade)<br>" +
+	    tmb13.toFixed(0) + "</strong> cal/dia | Pouco ativo (1-2 dias/semana)<br>" +
+	    tmb15.toFixed(0) + "</strong> cal/dia | Moderado (3-5 dias/semana)<br>" +
+	    tmb17.toFixed(0) + "</strong> cal/dia | Muito ativo (todos os dias)<br>" + 
+	    tmb19.toFixed(0) + "</strong> cal/dia | Atleta</td></tr></table>";
+
+        }
+
+
+
+
+    document.getElementById('Form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+    var altura = parseFloat(document.getElementById("height").value);
+    var pescoco = parseFloat(document.getElementById("pescoco").value);
+    var barriga = parseFloat(document.getElementById("barriga").value);
+
+    var circunferenciaPescoco = pescoco;
+    var circunferenciaBarriga = barriga;
+    var logCP = Math.log10(circunferenciaBarriga - circunferenciaPescoco);
+    var logA = Math.log10(altura);
+    var a = 0.191 * logCP;
+    var b = 0.155 * logA;
+
+    var percentualGordura = (495/(1.033 - a + b)) - 450;
+
+    var resultElement = document.getElementById('resultadobf');
+    resultElement.textContent = "Percentual de gordura corporal: " + percentualGordura.toFixed(2) + "%";
+});
+  
+ 
+  </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
